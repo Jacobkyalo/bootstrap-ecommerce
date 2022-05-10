@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift Shop</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid mb-5">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        
+        <div class="container">
+          <a class="navbar-brand" href="/"
+            >Gift<span class="text-success">Shop</span></a
+          >
+         
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  aria-current="page"
+                  href="#products"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><buttton type="submit" class="btn btn-success rounded-pill"
+                    >SignUp</buttton
+                  ></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white position-relative" href="#"><i class="bi bi-cart fs-2">
+                  <span class="position-absolute top-25 start-75 translate-middle
+                   badge rounded-pill bg-danger fst-normal fs-6" id="cartBadge">
+                    0
+                    <span class="visually-hidden">items</span> 
+                  </span>
+                </i></a>
+              </li>
+            </ul>            
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container py-5">
+      <div class="text-center">
+        <form action="#" method="get">
+          <div class="row">
+            <div class="col-md-9">
+              <input
+                type="search"
+                class="form-control p-3 fs-5 mt-3"
+                placeholder="What are you looking for?"
+              />
+            </div>
+            <div class="col-md-3">
+              <button type="submit" class="btn btn-success w-100 p-3 fs-5 mt-3">
+                Search
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container-fluid mb-4">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/family (2).jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cart2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/womanKitchen.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  
+    <section id="products" class="mb-5">
+      <div class="container">
+        <h2 class="text-center mb-4 text-success fw-bold fs-1">Our Products</h2>
+          <div class="row g-4 mb-5">
+            <div class="col-sm col-md-6 col-lg-3">
+              <div class="card border-0 text-center">
+                <img src="./assets/chair.jpg" alt="" class="card-img-top" />
+                <div class="card-body p-4 bg-dark text-white ">
+                  <h5 class="card-title fw-bolder">Office Chair</h5>
+                  <p class="lead card-text">
+                    $200.00
+                  </p>
+                  <a href="#" class="btn btn-success" id="cartBtn">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-3">
+              <div class="card border-0 text-center">
+                <img src="./assets/desk.jpg" alt="" class="card-img-top" />
+                <div class="card-body p-4 bg-dark text-white ">
+                  <h5 class="card-title fw-bolder">Standing Desk</h5>
+                  <p class="lead card-text">
+                    $300.00
+                  </p>
+                  <a href="#" class="btn btn-success">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-3">
+              <div class="card border-0 text-center">
+                <img src="./assets/sony.jpg" alt="" class="card-img-top" />
+                <div class="card-body p-4 bg-dark text-white ">
+                  <h5 class="card-title fw-bolder">Sony Headphones</h5>
+                  <p class="lead card-text">$10.00</p>
+                  <a href="#" class="btn btn-success">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-3">
+              <div class="card border-0 text-center">
+                <img src="./assets/calculator.jpg" alt="" class="card-img-top" />
+                <div class="card-body p-4 bg-dark text-white ">
+                  <h5 class="card-title fw-bolder">Office Calculator</h5>
+                  <p class="lead card-text">$20.00</p>
+                  <a href="#" class="btn btn-success">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-3">
+              <div class="card border-0 text-center">
+                <img src="./assets/heater.jpg" alt="" class="card-img-top" />
+                <div class="card-body p-4 bg-dark text-white ">
+                  <h5 class="card-title fw-bolder">Electric Heater</h5>
+                  <p class="lead card-text">$80.00</p>
+                  <a href="#" class="btn btn-success">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-3">
+              <div class="card border-0 text-center">
+                <img src="./assets/hp.jpg" alt="" class="card-img-top" />
+                <div class="card-body p-4 bg-dark text-white ">
+                  <h5 class="card-title fw-bolder">HP Laptop</h5>
+                  <p class="lead card-text">$250.00</p>
+                  <a href="#" class="btn btn-success">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-3">
+              <div class="card border-0 text-center">
+                <img src="./assets/macbook.jpg" alt="" class="card-img-top" />
+                <div class="card-body p-4 bg-dark text-white ">
+                  <h5 class="card-title fw-bolder">Macbook</h5>
+                  <p class="lead card-text">$900.00</p>
+                  <a href="#" class="btn btn-success">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-3">
+              <div class="card border-0 text-center">
+                <img src="./assets/microwave.jpg" alt="" class="card-img-top" />
+                <div class="card-body p-4 bg-dark text-white ">
+                  <h5 class="card-title fw-bolder">Microwave</h5>
+                  <p class="lead card-text">$70.00</p>
+                  <a href="#" class="btn btn-success">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-3">
+              <div class="card border-0 text-center">
+                <img src="./assets/infinix.jpg" alt="" class="card-img-top" />
+                <div class="card-body p-4 bg-dark text-white ">
+                  <h5 class="card-title fw-bolder">Infinix</h5>
+                  <p class="lead card-text">$120.00</p>
+                  <a href="#" class="btn btn-success">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-3">
+              <div class="card border-0 text-center">
+                <img src="./assets/iphone.jpg" alt="" class="card-img-top" />
+                <div class="card-body p-4 bg-dark text-white ">
+                  <h5 class="card-title fw-bolder">Iphone 13 Pro Max</h5>
+                  <p class="lead card-text">$1500.00</p>
+                  <a href="#" class="btn btn-success">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-3">
+              <div class="card border-0 text-center">
+                <img src="./assets/t-shirt.jpg" alt="" class="card-img-top" />
+                <div class="card-body p-4 bg-dark text-white ">
+                  <h5 class="card-title fw-bolder">T-shirts</h5>
+                  <p class="lead card-text">$8.00</p>
+                  <a href="#" class="btn btn-success">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-3">
+              <div class="card border-0 text-center">
+                <img src="./assets/coffeTABLE.jpg" alt="" class="card-img-top" />
+                <div class="card-body p-4 bg-dark text-white ">
+                  <h5 class="card-title fw-bolder">Coffee Table</h5>
+                  <p class="lead card-text">$8.00</p>
+                  <a href="#" class="btn btn-success">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="#" class="btn btn-success">View More Products</a>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="about" class="mb-5">
+      <div class="container text-white">
+        <h1 class="text-center text-success fw-bolder fs-1 mb-4">About Us</h1>
+        <p class="lead text-center">GiftShop helps customers to online in the comfort of their homes without
+          the need to vsit the shops. We give flexibility to our customers. Our customer care services are 
+          available <span class="text-success">24 / 7</span> to help our clients. Come <span class="text-success fw-bold">SHOP</span> with us 
+          and you will never regret.
+        </p>
+      </div>
+    </section>
+    <hr>
+    <section id="contact" class="mb-5">
+      <div class="container">
+        <h1 class="text-center text-success fw-bolder fs-1 mb-4">Get Updates on Our New Stocks</h1>
+        <div class="row">
+          <div class="col-sm col-md-5">
+            <h2 class="text-white fw-bold text-center mt-3">Join our Newsletter</h2>
+          </div>
+          <div class="col-sm col-md-5">
+            <form action="#">
+              <input type="email" class="form-control mt-3">
+            </form>
+          </div>
+          <div class="col-sm col-md-2">
+            <button type="submit" class="btn btn-primary w-100 mt-3">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="mb-4">
+      <div class="container">
+        <h1 class="text-center text-success fw-bolder fs-1 mb-4">FAQs</h1>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                What is GiftShop?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                GiftShop is an online shop offering fast deliveries countrywide.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How much does GiftShop cost?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                GiftShop prices are customer friendly and negotiable.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                How reliable is GiftShop?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                GiftShop offers 24 / 7 customer care services hence we are very reliable?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <footer>
+      <div class="text-center text-white mb-4">
+        <p class="fs-3 lead">Copyright &copy; 2022 GiftShop, All Rights Reserved.</p>
+        <p class="fs-5">Powered by <a href="https://getbootstrap.com/" target="_blank" class="text-success text-decoration-none">Bootstrap5</a></p>
+      </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

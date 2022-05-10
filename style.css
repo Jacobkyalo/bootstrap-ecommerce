@@ -1,0 +1,15 @@
+*,::before,::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(27, 27, 27);
+}
+hr {
+  color: #fff;
+}
+.card-img-top{
+  object-fit: contain;
+  aspect-ratio: 1/0.7;
+}
